@@ -1,6 +1,5 @@
 package com.adrianamendes.cursomc.domain;
 
-//objetos podem ser convertidos para uma sequencia de bytes-para que os objetos possam ser gravados em arquivos-para trafegar em rede
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -13,8 +12,6 @@ import javax.persistence.Id;
 public class Categoria implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	//gerando automaticamente os Id's das categorias
-	//mapeamento objeto relacional
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
